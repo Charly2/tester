@@ -1,0 +1,165 @@
+extends layout
+
+block content
+  .contenido
+      .form
+          .titulo
+            h1 Test de Productos
+          .form_control
+              .input
+                span Id:
+                input#idP(type = "number", placeholder="ID")
+              .input
+                span Nombre:
+                input#nombre_i(placeholder="Nombre")
+              .input
+                span Marca:
+                input#marca_i(placeholder="Marca")
+              .input
+                  span Descripción:
+                  textArea#des_i(placeholder="Descripción",rows="5" wrap="hard")
+              .input
+                  span Caracteristicas:
+                  textArea#carac_i(placeholder="Caracteristicas",rows="5" wrap="hard")
+              .input_doble
+                  .input_50
+                      span Color:
+                      input#color_i(placeholder="Color")
+                  .input_50
+                      span Categoria de Producto:
+                      input#cat_i(placeholder="Categoria")
+              .input_doble
+                  .input_60
+                      span Medidas de Producto:
+                      input#medida_i(placeholder="Medida")
+                  .input_40
+                      span Peso de Producto:
+                      input#peso_i(placeholder="Peso")
+              .input_doble
+                  .input_50
+                      span Precio:
+                      input#precio_i(placeholder="Precio")
+                  .input_50
+                      span Precio Descuento:
+                      input#precioD_i(placeholder="Precio Descuento")
+                .input_doble
+                  .input_50
+                      span Fecha Inicio:
+                      input#fechai_i(placeholder="Fecha Incio")
+                  .input_50
+                      span Fecha Final:
+                      input#fechaf_i(placeholder="Fecha Incio") 
+                .input_doble
+                  .input_50
+                      span SKU:
+                      input#sku_i(placeholder="SKU")
+                  .input_50
+                      span Cod Barras:
+                      input#codBarr_i(placeholder= "Cod Barras")
+                .input_doble
+                    .input_30
+                      span Inventario:
+                      input#inventario_i(placeholder="Inventario")
+                    .input_30
+                      span Condicion:
+                      input#condicion_i(placeholder= "Condicion")  
+                    .input_30
+                      span MemberGua:
+                      input#member_i(placeholder= "MemberGua")  
+                .input_doble
+                  .input_60
+                      span Medidas de Paquete:
+                      input#medidap_i(placeholder="Medida")
+                  .input_40
+                      span Peso de Paquete:
+                      input#pesop_i(placeholder="Peso")
+                .input_doble
+                  .input_50
+                      span Impuestos:
+                      input#impuestos_i(placeholder="Impuestos")
+                  .input_50
+                      span Envio Gratis:
+                      input#envio_i(placeholder="Envio Gratis" ) 
+                .botones
+                    button#rejected
+                        i(class="fas fa-times")
+                    button#accepted
+                        i(class="fas fa-check")
+
+      .producto#producto
+        .header
+          h1#nombre
+          h2#marca
+        .body  
+            .descrip Descripción:
+                br
+                p#des
+            .caracte
+                p Caracteristicas:
+                ul#carac
+            .info-4
+                .infoitem
+                    span Color
+                    p#color
+                .infoitem#medidaCorr
+                    span Medida
+                    p#medida
+                .infoitem
+                    span Peso
+                    p#peso
+                .infoitem
+                    span Categoria
+                    p#cat
+            .info-4
+                .infoitem
+                    span Precio
+                    p#precio
+                .infoitem
+                    span Precio C/Descuendo
+                    p#precioD
+                .infoitem
+                    span Fecha Inicio
+                    p#fechai
+                .infoitem  
+                    span Fecha Fin
+                    p#fechaf
+            .info-4  
+                .infoitem
+                    span SKU
+                    p#sku
+                .infoitem
+                    span Cog Barras
+                    p#codBarr
+                .infoitem
+                    span Inventario
+                    p#inventario
+                .infoitem#condicionCorr
+                    span Condición
+                    p#condicion
+            .info-5  
+                .infoitem
+                    span Member 
+                    p#member
+                .infoitem#medidaCorrP
+                    span Medida Paquete
+                    p#medidap
+                .infoitem
+                    span Peso Paquete
+                    p#pesop
+                .infoitem
+                    span Impuestos
+                    p#impuestos
+                .infoitem    
+                    span Envio Gratis
+                    p#envio 
+            #fotos
+            #foto_info
+            #fotos_none(style="display:none")   
+                   
+
+  script(src="/javascripts/jquery.min.js")
+  script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+  script(src="/javascripts/app.js")
+
+
+
